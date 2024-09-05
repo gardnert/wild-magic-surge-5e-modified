@@ -114,7 +114,7 @@ export default class Chat {
         `${WMSCONST.OPT_WMS_NAME}`,
       );
       return <ChatMessage>{
-        flavor: `${wildMagicSurgeName} Check - ${message}`,
+        flavor: `${wildMagicSurgeName} Check - ${message}. Rolled ${roll.total} on 1d${roll.terms[0]._faces}`,
         roll: roll,
         rollMode: isRollOnTableButton
           ? "publicroll"
